@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*---- 分页 ----*/
+.pageList{
+           padding:60px 0 80px;text-align:center;height:auto;overflow:hidden;
+           a{
+               padding:4px 10px;border:1px solid #e6e7e8;margin-right:-1px;
+               &:hover{background-color: #9da1a6;color:#fff;}
+               &.lastPage{border-left:none;} 
+            }
+           span{
+                   padding:4px 10px;cursor:pointer;border:$border;margin-right:-1px;
+                   &.current{background:#9da1a6;color:#FFF;cursor:auto;}
+                   &.disabled{cursor:auto;background:#fff;}
+               }
+}

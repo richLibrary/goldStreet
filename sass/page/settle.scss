@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import "../base/_variables";
+@import "../layout/_navSlide";
+body{background:#f5f5f5;}
+/*---- 焦点图 ----*/
+.wraper{
+          @include wh(100%,auto);overflow:hidden;padding-bottom:40px;
+          img{width:1920px; height:100%; position:relative;left:50%; margin-left:-960px;}
+       }
+/*----什么是金街市场----*/
+.settleMain{
+             @include center;padding:0 68px;
+             h2{font:24px/40px $font;color:#333;text-align:center;background:#f5f5f5;}                        
+           }
+.settleCon{
+            height:auto;overflow:hidden;background:#fff;padding-bottom:30px;margin-top:20px;
+            img{display:table-cell;@include wh(1064px,248px);margin:0 auto;}
+          }
+.settleText{
+             @include wh(1060px,auto);border:1px solid #ffc5b1;padding:14px 25px;margin:50px auto 0;
+             dt{font:bold 16px/36px $font;color:#333;}
+             dd{font:14px/26px $font;color:#666;}
+           }
+/*----入驻优势----*/
+.advantageMain{
+             @include center;padding:0 68px;margin-top:40px;
+             h2{font:24px/40px $font;color:#333;text-align:center;}                        
+           }
+.advantageCon{
+                height:auto;overflow:hidden;margin-top:15px;
+                li{
+                    float:left;margin-right:18px;@include wh(503px,296px);background:#ffae00;padding:64px 44px 0;
+                    img{@include wh(310px,auto);display:block;margin:0 auto;}
+                    p{font:bold 18px/30px $font;color:#fff;text-align:center;margin-top:20px;}
+                  } 
+             }
+/*----入驻流程----*/
+.stepsMain{
+             @include center;padding:0 68px;margin-top:40px;
+             h2{font:24px/40px $font;color:#333;text-align:center;}                        
+           }
+.stepsCon{
+            height:auto;overflow:hidden;margin-top:5px;padding-bottom:30px;
+            li{
+                float:left;margin:10px 18px 0 0;@include wh(246px,270px);cursor:pointer;background:#fff;padding:40px 20px;text-align:center;position:relative;@include transition(all .2s linear);
+                i{color:#ff9703;font-size:70px;}
+                strong{font:bold 20px/30px $font;color:#333;margin-top:30px;display:block;}
+                span{font:14px/24px $font;color:#666;text-align:center;margin:20px 0 28px;display:block;}
+                p{font:14px/24px $font;color:#666;text-align:center;margin:20px 0 50px;}
+                a{
+                    display:inline-block;border:1px solid #fe7200;height:24px;font:14px/24px $font;color:#fe7200;padding:0 18px;margin-right:10px;@include border-radius(4px);
+                    &:hover{background:#FE7200;color:#fff;}
+                  }
+                b{color:#FE7200;font-size:20px;left:-5px;top:43%;position:absolute;}
+                &:hover{@include box-shadow(0 15px 30px rgba(0,0,0,0.1));margin-top:5px;@include transform(translate3d(0,-2px,0));}
+              } 
+          }
+          
+/*----入驻常见问题----*/
+.problemMain{
+             @include center;margin-top:20px;
+             h2{font:24px/40px $font;color:#333;text-align:center}                        
+           }
+.problemCon{
+            height:auto;overflow:hidden;margin-top:15px;background:#fff;padding:66px 66px 44px;
+            dl{
+                height:auto;overflow:hidden;padding:0 25px 20px;position:relative;
+                dt{
+                    font:14px/24px $font;color:#000;
+                    &:before{content:"Q：";@include wh(26px,20px);color:#666;position:absolute;left:0;top:0;}
+                   }
+               dd{
+                   font:14px/24px $font;color:#000;
+                    &:before{content:"A：";@include wh(26px,20px);color:#666;position:absolute;left:0;top:24px;}
+                 }
+              }
+          }
+          
+/*----开启盈利模式----*/
+.modelMain{
+             @include center;margin-top:40px;text-align:center;
+             h2{font:24px/40px $font;color:#333;}                        
+             b{color:#fe811a;font:24px/40px $font;display:block;}
+             em{font:bold 36px/50px $font;color:#fe811a;display:block;}
+             img{display:block;@include wh(140px,140px);margin:0 auto;border:6px solid #E4E4E4;}
+             p{
+                 font:12px/20px $font;color:#666;margin-top:12px;
+                 i{color:#07bf05;font-size:26px;margin:0 5px 0 -10px;vertical-align:-4px;}
+              }
+          }
+ /*----弹窗----*/         
+.Tips{
+          @include wh(520px,250px);background:#fff;@include border-radius(4px);position:relative;display:none;margin: 0 auto;
+          h2{font:bold 18px/50px $font;color:#fff;padding-left:20px;background:#f15121;}
+          i{position:absolute;right:15px;top:12px;font-size:26px;color:#fff;cursor:pointer;}       
+       }
+.diaMain{
+          padding:30px 40px;height:auto;overflow:hidden;
+          dt{
+              height:auto;overflow:hidden;float:left;
+              img{@include wh(112px,138px)};
+            }
+          dd{
+              font:bold 16px/24px $font;color:#F15121;float:left;@include wh(310px,auto);margin:32px 0 0 12px;
+              b{font:bold 18px/32px $font;}
+            }
+            
+        }

@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/*---- 公共底部 ----*/
+.Footer{
+    @include wh(100%,auto);overflow:hidden;margin-top:40px;background:#3d424c;padding:32px 0;
+    p{font:12px/24px $font;color:#787878;text-align:center;@include center;}
+}

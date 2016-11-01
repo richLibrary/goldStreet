@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="utf-8" />
+	<title>企汇网金街详情页</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="网页的描述"/>
+	<link rel="stylesheet" href="css/base/common.css" type="text/css" />
+	<link rel="stylesheet" href="css/page/list.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>	
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div ng-include="'header.html'"></div>
+<div ng-include="'navSlide.html'"></div>
+<!-- 内容开始 -->
+<div class="proDetail">
+    <div class="leftSub">
+        <a class="leftImg" href="" target="_blank" title=""><img src="images/proImg.jpg" width="240" height="240" alt=""></a>
+        <dl class="proContent">
+	        <dt><h3>天梯黄金版建站套餐</h3></dt>
+	        <dd><p>建站通手机版+会员系统+购物车系统+支付系统+微站，页面精美，操作方便，交互性好，轻松实现具备新媒体营销的移动电商。</p></dd>
+	        <dd><label>累计销售：</label><span>23673套</span></dd>
+	        <dd><label>优惠特价：</label><em>25000元/年</em><del>5000元/年</del></dd>
+	        <dd><label>服务年限：</label>
+	            <div class="proCount">
+	                <a style="border-right:1px solid #ccc;" href="#">-</a>
+	                <input type="text" value="1"/>
+	                <a style="border-left:1px solid #ccc;" href="#">+</a>
+	            </div>
+	        </dd>
+	        <dd><a href="" class="proBtn" target="_blank" title="">立即购买</a></dd>
+        </dl>
+    </div>
+    <div class="rightSub">
+        <a class="rightTip" href="" target="_blank" title=""><img src="images/tip.png" width="220" height="20" alt=""></a>
+        <div class="rightCont">
+			<a class="rightTitle" href="" target="_blank" title="">河南企汇网信息技术股份有限公司</a>
+			<em>平台自营</em>
+			<ul class="rightAddress">
+				<li>所 在 地 ：<span>郑州市高新区冬青街26号3号楼2层</span></li>
+				<li>客服电话 ：<span>400-6677-369</span></li>
+				<li>在线咨询：<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&uin=4006677369"><img src="images/Online.jpg" width="92" height="22" alt=""></a></li>
+				<li>客服邮箱：<span>qhw@qihuiwang.com</span></li>
+			</ul>
+        </div>
+    </div>
+</div>
+<div class="detailMain">	
+    <div class="detConment">
+        <h2>产品详情</h2>
+        <div class="detText">
+                <p>1、企汇网金铺基础套餐包括客户网站多套炫丽皮肤、产品滚动展示、Banner多图设计</p>
+                <p>2、800k高清图片切换展示、200M图片空间、第三方插件安装、独立域名绑定</p>
+                <p>3、产品信息发布20条/天、金铺装修系统、托管制作服务以及收录查询工具等服务，全面提升网站质感、塑造企业品牌形象！</p>
+                <img src="images/detImg.jpg">
+        </div>
+    </div>
+    <div class="detSidebar">
+        <h2>商家都在用</h2>
+        <ul class="detList">
+            <li>
+                <a href="#"><img src="images/sibar.jpg" width="100" height="100" alt=""></a>
+                <h3><a href="#">企汇网金铺基础套餐</a></h3>
+                <p><em>￥5000</em>元/年</p>
+            </li>
+            <li>
+                <a href="#"><img src="images/sibar.jpg" width="100" height="100" alt=""></a>
+                <h3><a href="#">企汇网金铺基础套餐</a></h3>
+                <p><em>￥5000</em>元/年</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div ng-include="'footer.html'"></div>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	//  全部分类
+    $(".menuCatary li").mouseenter(function(){
+        $(this).find(".menuText").show();
+        $(this).addClass('on');
+		$(this).siblings().removeClass('on')
+    })
+    $(".menuCatary li").mouseleave(function(){
+        $(this).find(".menuText").hide();
+    })
+})
+</script>
+</body>
+</html>

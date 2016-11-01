@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import "../base/_variables";
+/*---- 公共头部 ----*/
+.topbar{
+        @include wh(100%,30px);
+        border-bottom:$border;
+        background:#fff;
+       }
+.topMain{@include wh(1200px,30px);margin:0 auto;}
+.login{
+        float:left;font:12px/30px $font;color:#666;
+        a{margin-left:12px;}
+      }
+.logged{
+        float:left;font:12px/30px $font;color:#666;
+        a{margin-left:12px;}
+      }
+.topRight{
+            float:right;margin:5px 0;height:20px;
+            li{
+                float:left;position:relative;line-height:18px;
+                &:hover{
+                        >a{
+                            border-left:none;border-top:$border;z-index:1002;
+                            i{transform:rotate(180deg);display:inline-block;}
+                           }
+                         >a.topMenu{border-top:1px solid #fff;}                   
+                        .topList{display:block;z-index:1001;}
+                        .topNav{display:block;z-index:1001;}
+                       }
+                    >a{
+                        display:block;font:12px/18px $font;color:#666;border-right:$border;padding:0 10px;border-top:1px solid #fff;border-bottom:1px solid #fff;position:relative;z-index:12;
+                        i{font-size:14px;color:#666;vertical-align:-1px;}
+                      }            
+              }
+ }        
+.topList{
+    position:absolute;top:20px;left:-1px;width:94px;background:#fff;text-align:center;border:$border;display:none;
+    dd{
+        line-height:24px;
+        >a{
+            color:#666;font:12px/24px $font;padding:0 9px;
+            &:hover{background:#FF7300;color:#fff;}
+          }
+      }
+} 
+.topNav{
+    position:absolute;top:20px;left:-180px;background:#fff;text-align:center;padding:0 9px 0 10px;border:$border;display:none;width:242px;
+    dd{
+        line-height:24px;float:left;margin:6px 4px;
+        >a{
+            color:#666;font:12px/24px $font;padding:0 4px;
+            &:hover{background:#FF7300;color:#fff;}
+          }
+      }
+}
+.Head{@include all;background:#fff;}  
+.headMain{
+        @include center;
+        margin:0 auto;
+        padding:25px 0;
+        h1{
+           position:relative;
+           @include wh(262px,48px);
+           float:left;
+           a{
+            display:block;
+            @include wh(262px,48px);
+            @include bgsize("logo.png");
+            text-indent:-999em;         
+             } 
+           }
+        span{
+            display:block;float:left;
+            @include wh(200px,38px);
+            margin:6px 0 0 24px;
+        }
+}
+.Seach{
+        float:right;height:auto;overflow:hidden;
+        input{@include wh(346px,34px);border:$border;padding-left:12px;color:#a9a9a9;font:14px/34px $font;float:left;}
+        button{@include wh(100px,38px);background:#f15121;text-align:center;font:16px/38px $font;color:#fff;border:none;float:left;}
+  }

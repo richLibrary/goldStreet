@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="utf-8" />
+	<title>企汇网金街列表页</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="网页的描述"/>
+	<link rel="stylesheet" href="css/base/common.css" type="text/css" />
+	<link rel="stylesheet" href="css/page/list.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>	
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div ng-include="'header.html'"></div>
+<div ng-include="'navSlide.html'"></div>
+<!---- 产品列表 ---->
+<div class="listResult">
+	<span>您搜索的关键词：<b>认证</b>，共有 <b>7</b> 个结果。</span>
+	<ul>
+		<li>
+			<a href="" target="_self" title=""><img src="images/pro.jpg" width="240" height="240" alt=""></a>							
+			<h3><a class="resultTitle" href="" target="_blank" title="百科文案撰写以及上传并成功">百科文案撰写以及上传并成功百科文案撰写以及上传并成功</a></h3>
+			<p><em>￥1200</em>元/年<b>21574人使用</b></p>						
+		</li>
+		<li>
+			<a href="" target="_self" title=""><img src="images/pro1.jpg" width="240" height="240" alt=""></a>							
+			<h3><a class="resultTitle" href="" target="_blank" title="企业官网认证">企业官网认证</a></h3>
+			<p><em>￥1200</em>元/年<b>21574人使用</b></p>						
+		</li>
+		<li>
+			<a href="" target="_self" title=""><img src="images/pro2.jpg" width="240" height="240" alt=""></a>							
+			<h3><a class="resultTitle" href="" target="_blank" title="企业客服电话认证">企业客服电话认证</a></h3>
+			<p><em>￥1200</em>元/年<b>21574人使用</b></p>						
+		</li>
+		<li>
+			<a href="" target="_self" title=""><img src="images/pro3.jpg" width="240" height="240" alt=""></a>							
+			<h3><a class="resultTitle" href="" target="_blank" title="企业地标展示">企业地标展示</a></h3>
+			<p><em>￥500</em>元/件<b>21574人使用</b></p>						
+		</li>
+		<li>
+			<a href="" target="_self" title=""><img src="images/pro4.jpg" width="240" height="240" alt=""></a>							
+			<h3><a class="resultTitle" href="" target="_blank" title="撰写并预埋问答，植入企业品牌">撰写并预埋问答，植入企业品牌</a></h3>
+			<p><em>￥1200</em>元/年<b>21574人使用</b></p>						
+		</li>
+		<li>
+			<a href="" target="_self" title=""><img src="images/pro5.jpg" width="240" height="240" alt=""></a>							
+			<h3><a class="resultTitle" href="" target="_blank" title="创建贴吧以及吧主申请">创建贴吧以及吧主申请</a></h3>
+			<p><em>￥1200</em>元/年<b>21574人使用</b></p>						
+		</li>
+		<li>
+			<a href="" target="_self" title=""><img src="images/pro6.jpg" width="240" height="240" alt=""></a>							
+			<h3><a class="resultTitle" href="" target="_blank" title="百度口碑提高">百度口碑提高</a></h3>
+			<p><em>￥1200</em>元/年<b>21574人使用</b></p>						
+		</li>
+		<li>
+			<a href="" target="_self" title=""><img src="images/pro7.jpg" width="240" height="300" alt=""></a>												
+		</li>
+	</ul>
+</div>
+<div ng-include="'footer.html'"></div>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".listResult ul li:nth-child(4n)").css("border-right","none");
+	//  全部分类
+    $(".menuCatary li").mouseenter(function(){
+        $(this).find(".menuText").show();
+        $(this).addClass('on');
+		$(this).siblings().removeClass('on')
+    })
+    $(".menuCatary li").mouseleave(function(){
+        $(this).find(".menuText").hide();
+    })
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的金街</title>
+    <link rel="stylesheet" type="text/css" href="css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="css/page/list.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="userCtrl">
+<div ng-include="'header.html'"></div>
+<div ng-include="'navSlide.html'"></div>
+<!-- 内容开始 -->
+<div class="service-wrapper">
+    <!--页面导航菜单-->
+    <div class="ser-nav" id="ser-nav">
+        <ul>
+            <li class="navHover"><a href="#">我的服务</a></li>
+            <li><a href="#">我的订单</a></li>
+        </ul>
+    </div>
+    <!--内容-->
+    <div class="all-content">
+        <!--我的服务-->
+        <div class="content" style="display:block;">
+            <div class="ser-tit">
+                <ul>
+                    <li class="ser-active"><a href="#">可用的服务</a></li>
+                    <li><a href="#">已结束的服务</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="all">
+                <!--可用服务-->
+                <div class="services">
+                    <div class="service-title">
+                        <ul>
+                            <li class="li001">服务名称</li>
+                            <li class="li002">服务类型</li>
+                            <li class="li004">服务价格</li>
+                            <li class="li004">购买时间</li>
+                            <li class="li004">到期时间</li>
+                            <li class="li004">服务热线</li>
+                            <li class="li003">操作</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <ul>
+                            <li class="bb01">
+                            <span class="span001">
+                                <a href="#">
+                                    <div class="service">
+                                        <img src="images/jj-img01.png">
+                                        <p>100M企汇网图片服务空间</p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
+                            </span>
+                                <span class="span002">VIP会员套餐</span>
+                                <span class="span003">￥5000</span>
+                                <span class="span005">2015-08-10</span>
+                                <span class="span005">2016-08-10</span>
+                                <span class="span005">400-6677-369</span>
+                            <span class="span004">
+                                <div class="sy01"><input type="button" class="sy-btn01" value="去使用"></div>
+                            </span>
+                            </li >
+                            <li class="bb01">
+                            <span class="span001">
+                                <a href="#">
+                                    <div class="service">
+                                        <img src="images/jj-img02.png">
+                                        <p>企汇网金铺</p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
+                            </span>
+                                <span class="span002">VIP会员套餐</span>
+                                <span class="span003">￥5000</span>
+                                <span class="span005">2015-08-10</span>
+                                <span class="span005">2016-08-10</span>
+                                <span class="span005">400-6677-369</span>
+                            <span class="span004">
+                                <div class="sim-btn"><input type="button" class="lxkf-btn" value="联系客服"></div>
+                            </span>
+                            </li>
+                            <li class="bb01">
+                            <span class="span001">
+                                <a href="#">
+                                    <div class="service">
+                                        <img src="images/jj-img03.png">
+                                        <p>企汇网金铺</p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
+                            </span>
+                                <span class="span002">VIP会员套餐</span>
+                                <span class="span003">￥5000</span>
+                                <span class="span005">2015-08-10</span>
+                                <span class="span005">2016-08-10</span>
+                                <span class="span005">400-6677-369</span>
+                            <span class="span004">
+                                <div class="btn">
+                                    <div class="xd"><input type="button" class="xd-btn" value="续订"></div>
+                                    <div class="sy"><input type="button" class="sy-btn" value="去使用"></div>
+                                </div>
+                                <div class="clear"></div>
+                            </span>
+                            </li>
+                            <li>
+                            <span class="span001">
+                                <a href="#">
+                                    <div class="service">
+                                        <img src="images/jj-img03.png">
+                                        <p>企汇网金铺</p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
+                            </span>
+                                <span class="span002">VIP会员套餐</span>
+                                <span class="span003">￥5000</span>
+                                <span class="span005">2015-08-10</span>
+                                <span class="span005">2016-08-10</span>
+                                <span class="span005">400-6677-369</span>
+                            <span class="span004">
+                                <div class="xd01"><input type="button" class="xd-btn01" value="续订"></div>
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div ng-include="'pagination.html'"></div>
+                </div>
+                <!--已结束服务-->
+                <div class="services" style="display: none;">
+                    <div class="service-title">
+                        <ul>
+                            <li class="li001">服务名称</li>
+                            <li class="li002">服务类型</li>
+                            <li class="li004">服务价格</li>
+                            <li class="li004">购买时间</li>
+                            <li class="li004">到期时间</li>
+                            <li class="li004">服务热线</li>
+                            <li class="li003">操作</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <ul>
+                            <li>
+                            <span class="span001">
+                                <a href="#">
+                                    <div class="service">
+                                        <img src="images/jj-img01.png">
+                                        <p>企汇网金铺</p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
+                            </span>
+                                <span class="span002">VIP会员套餐</span>
+                                <span class="span003">￥5000</span>
+                                <span class="span005">2015-08-10</span>
+                                <span class="span005">2016-08-10</span>
+                                <span class="span005">400-6677-369</span>
+                            <span class="span004">
+                                <div class="sim-btn"><input type="button" class="zcgm-btn" value="再次购买"></div>
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div ng-include="'pagination.html'"></div>
+                </div>
+            </div>
+        </div>
+        <!--我的订单-->
+        <div class="content" style="display: none;">
+            <div class="search-box">
+                <div class="search-time">
+                	购买时间：
+                	<select>
+                		<option>请选择</option>
+                		<option>近一个月</option>
+                		<option>近三个月</option>
+                		<option>近半年</option>
+                		<option>近一年</option>
+                	</select>
+                	订单状况：
+                	<select>
+                		<option>全部</option>
+                		<option>已开通</option>
+                		<option>未付款</option>
+                	</select>
+                	<input class="search-btn" type="button" value="搜索" />
+                </div>
+            </div>
+            <div class="order-box">
+                <div class="order-title">
+                    <ul>
+                        <li class="order001">订单编号</li>
+                        <li class="order002">商品名称</li>
+                        <li class="order003">单价</li>
+                        <li class="order004">数量</li>
+                        <li class="order003">实付款</li>
+                        <li class="order005">购买时间</li>
+                        <li class="order003">订单状态</li>
+                        <li class="order006">操作</li>
+                    </ul>
+                </div>
+                <div class="order-content">
+                    <ul>
+                        <li class="bb01">
+                            <span class="span005">201510102365</span>
+                            <span class="span006">
+                                <a href="#">
+                                    <div class="order">
+                                        <img src="images/jj-img03.png">
+                                        <p>100M企汇网图片服务空间</p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
+                            </span>
+                            <span class="span007">￥5000</span>
+                            <span class="span008">2</span>
+                            <span class="span007">￥5000</span>
+                            <span class="span009">2015-08-10</span>
+                            <span class="span011">已开通</span>
+                            <span class="span010">
+                                <div class="pay">
+                                    <input type="button" class="xd-btn" value="付款">
+                                </div>
+                                <div class="clear"></div>
+                            </span>
+                        </li>
+                        <li class="bb01">
+                            <span class="span005">201510102365</span>
+                            <span class="span006">
+                                <a href="#">
+                                    <div class="order">
+                                        <img src="images/jj-img03.png">
+                                        <p>企汇网金铺</p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
+                            </span>
+                            <span class="span007">￥5000</span>
+                            <span class="span008">2</span>
+                            <span class="span007">￥5000</span>
+                            <span class="span009">2015-08-10</span>
+                            <span class="span011">已开通</span>
+                            <span class="span010">
+                                <div class="pay">
+                                    <input type="button" class="xd-btn" value="付款">
+                                </div>
+                                <div class="clear"></div>
+                            </span>
+                        </li>
+                        <li class="bb01">
+                            <span class="span005">201510102365</span>
+                            <span class="span006">
+                                <a href="#">
+                                    <div class="order">
+                                        <img src="images/jj-img03.png">
+                                        <p>企汇网金铺</p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
+                            </span>
+                            <span class="span007">￥5000</span>
+                            <span class="span008">2</span>
+                            <span class="span007">￥5000</span>
+                            <span class="span009">2015-08-10</span>
+                            <span class="span011">已开通</span>
+                            <span class="span010">
+                                <div class="pay">
+                                    <input type="button" class="xd-btn" value="付款">
+                                </div>
+                                <div class="clear"></div>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="span005">201510102365</span>
+                            <span class="span006">
+                                <a href="#">
+                                    <div class="order">
+                                        <img src="images/jj-img03.png">
+                                        <p>企汇网金铺</p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
+                            </span>
+                            <span class="span007">￥5000</span>
+                            <span class="span008">2</span>
+                            <span class="span007">￥5000</span>
+                            <span class="span009">2015-08-10</span>
+                            <span class="span011">已开通</span>
+                            <span class="span010">
+                                <div class="pay">
+                                    <input type="button" class="xd-btn" value="付款">
+                                </div>
+                                <div class="clear"></div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="'pagination.html'"></div>
+        </div>
+    </div>
+</div>
+<!-- 底部 -->
+<div class="Footer">
+	<div class="footMain">
+		<a href="#" target="_blank" title="">网站首页</a>
+		<a href="#" target="_blank" title="">关于我们</a>
+		<a href="#" target="_blank" title="">联系方式</a>
+		<a href="#" target="_blank" title="">使用协议</a>
+		<a href="#" target="_blank" title="">版权隐私</a>
+		<a href="#" target="_blank" title="">网站地图</a>
+		<a href="#" target="_blank" title="">网站留言</a>
+		<a style="border-right:0px" href="#" target="_blank" title="">关注我们</a>
+	</div>
+	<p>版权所有2012-2015  河南企汇网信息技术股份有限公司  保留所有权利经营许可证编号：豫B2-20140075</p>
+</div>
+<script type="text/javascript" src="js/angular.js"></script>
+</body>
+</html>
